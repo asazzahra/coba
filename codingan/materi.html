@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Utama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+        :root{
+            --text-color-1: rgb(255, 203, 203);
+            --text-color-2: rgba(25, 64, 124, 1);
+            --text-color-3: rgba(79, 145, 246, 1);
+            --text-color-4: white;
+            --text-color-5: rgba(217, 217, 217, 1);
+            --text-color-6: black;
+            --text-color-7: rgba(253, 240, 240, 1);
+         }
+        .btn-hover1 button{
+            color:var(--text-color-7); 
+            background-color: var(--text-color-2); 
+            border: 2px solid var(--text-color-7); 
+        }
+
+        .btn-hover1 button:hover{
+            background-color: var(--text-color-7);
+            color: var(--text-color-2);
+        }
+
+        .btn-hover2 button{
+          color:var(--text-color-2); 
+          background-color: var(--text-color-1); 
+          border: 2px solid var(--text-color-2); 
+        }
+
+        .btn-hover2 button:hover{
+          background-color: var(--text-color-2);
+          color: var(--text-color-1);
+        }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-image: linear-gradient(to right, rgba(253, 240, 240, 1), rgb(129, 180, 255));">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3 style="color: rgba(25, 64, 124, 1);">&lt; Praktikoem WEB /&gt;</h3></a>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html" data-bs-toggle="tooltip" title="Rumah"><i class='bx bxs-home' style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="wa.html" data-bs-toggle="tooltip" title="Kontak"><i class="fa-brands fa-whatsapp" style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tooltip" title="Notifikasi"><i class="fa-solid fa-bell" style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="profile.html" data-bs-toggle="tooltip" title="Profil"><i class='bx bxs-user-circle' style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+              </ul>
+          </div>
+  
+          <div class="btn-hover1">
+              <button class="btn btn rounded-5 w-50s justify-content-end" type="button">Log Out</button>
+          </div>
+  
+      </div>
+  </nav>
+
+
+<h1 style="margin-top: 100px; color: rgba(25, 64, 124, 1);">SISTEM DIGITAL S-1 [INF]</h1>
+<hr style="margin-top: 10px; border: 3px solid rgba(25, 64, 124, 1);">
+
+<h3 style=" margin-top: 25px; color: rgba(25, 64, 124, 1);">< PRACTICAL MATERIAL /></h3>
+  <!-- IFRAME-MATERI -->
+  <div class="container-fluid" style="margin-top: 10px;">
+    <div class="p-3">
+        <div class="row text-center" style="color: rgba(25, 64, 124, 1);">
+            <div class="col-md-4" >
+                <iframe src="https://www.dicoding.com/blog/gerbang-logika-dan-tabel-kebenaran/" style="border:2px solid  rgba(25, 64, 124, 1); margin-top: 10px; height:250px; width:300px;" title="Iframe Example"></iframe>
+                <h4>Modul 1</h4>
+              </div>
+            <div class="col-md-4" >
+                <iframe src="https://www.dicoding.com/blog/gerbang-logika-dan-tabel-kebenaran/" style="border:2px solid  rgba(25, 64, 124, 1); margin-top: 10px; height:250px; width:300px;" title="Iframe Example"></iframe>
+                <h4>Modul 2</h4>
+              </div>
+            <div class="col-md-4" >
+                <iframe src="https://www.dicoding.com/blog/gerbang-logika-dan-tabel-kebenaran/" style="border:2px solid  rgba(25, 64, 124, 1); margin-top: 10px; height:250px; width:300px;" title="Iframe Example"></iframe>
+                <h4>Modul 3</h4>
+              </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+  <hr style="margin-top: 55px; border: 3px solid rgba(25, 64, 124, 1);">
+  <h3 style="margin-top: 25px; color: rgba(25, 64, 124, 1);">< TASK /></h3>
+    <ol style="text-align: justify; font-size: 25px; margin-left: 20px; margin-top: 20px;">
+      <li>Jelaskan pengertian dari sistem bilangan biner, oktal, dan heksadesimal. Berikan contoh konversi antara ketiga sistem bilangan tersebut.</li>
+      <li>Buatlah table dan gambarkan gerbang OR, AND, NOT, NAND, NOR, XOR, dan XNOR.</li>
+      <li>Jelaskan perbedaan antara dekoder dan enkoder dalam konteks sistem digital.</li>
+    </ol>
+  
+
+  <hr style="margin-top: 55px; border: 3px solid rgba(25, 64, 124, 1);">
+  <h3 style="margin-top: 25px; color: rgba(25, 64, 124, 1);">< UPLOAD TASK /></h3>
+  <h5 style="margin-left: 20px; font-size: 25px; margin-top: 20px;"><u>Link Pengumpulan Tugas:</u></h5>
+  <a style=" margin-top: 20px; text-align: justify; font-size: 25px; margin-left: 20px;" href="https://drive.google.com/drive/folders/1Yk7YJ7NslMIUkrGK6ZE8hSAcHCIUKse7?usp=drive_link">Pengumpulan Tugas</a>
+ 
+  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<!-- membuat 2 button -->
+
+<!-- <form class="container-fluid justify-content-start">
+    <button class="btn btn-outline-success me-2" type="button">Main button</button>
+    <button class="btn btn-outline-secondary me-2" type="button">Smaller button</button>
+</form> -->

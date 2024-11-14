@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Utama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+        :root{
+            --text-color-1: rgb(255, 203, 203);
+            --text-color-2: rgba(25, 64, 124, 1);
+            --text-color-3: rgba(79, 145, 246, 1);
+            --text-color-4: white;
+            --text-color-5: rgba(217, 217, 217, 1);
+            --text-color-6: black;
+            --text-color-7: rgba(253, 240, 240, 1);
+         }
+        .btn-hover1 button{
+            color:var(--text-color-7); 
+            background-color: var(--text-color-2); 
+            border: 2px solid var(--text-color-7); 
+        }
+
+        .btn-hover1 button:hover{
+            background-color: var(--text-color-7);
+            color: var(--text-color-2);
+        }
+
+        .btn-hover2 button{
+          color:var(--text-color-2); 
+          background-color: var(--text-color-1); 
+          border: 2px solid var(--text-color-2); 
+        }
+
+        .btn-hover2 button:hover{
+          background-color: var(--text-color-2);
+          color: var(--text-color-1);
+        }
+
+        .navbar-brand h3 {
+            color: rgba(25, 64, 124, 1);
+        }
+        .navbar-nav .nav-link {
+            font-size: 24px;
+            color: var(--text-color-7);
+        }
+        .btn-hover1 .btn {
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+  
+
+
+    </style>
+
+  </head>
+  <body>
+    
+<!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-image: linear-gradient(to right, rgba(253, 240, 240, 1), rgb(129, 180, 255));">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3 style="color: rgba(25, 64, 124, 1);">&lt; Praktikoem WEB /&gt;</h3></a>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html" data-bs-toggle="tooltip" title="Rumah"><i class='bx bxs-home' style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="wa.html" data-bs-toggle="tooltip" title="Kontak"><i class="fa-brands fa-whatsapp" style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tooltip" title="Notifikasi"><i class="fa-solid fa-bell" style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="profile.html" data-bs-toggle="tooltip" title="Profil"><i class='bx bxs-user-circle' style="color: var(--text-color-7); font-size: 24px;"></i></a>
+                  </li>
+              </ul>
+          </div>
+  
+          <div class="btn-hover1">
+              <button class="btn btn rounded-5 w-50s justify-content-end" type="button">Log Out</button>
+          </div>
+  
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-image: linear-gradient(to right, rgba(253, 240, 240, 1), rgb(129, 180, 255));">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3>&lt; Praktikoem WEB /&gt;</h3></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html" data-bs-toggle="tooltip" title="Rumah"><i class='bx bxs-home'></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="wa.html" data-bs-toggle="tooltip" title="Kontak"><i class="fa-brands fa-whatsapp"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tooltip" title="Notifikasi"><i class="fa-solid fa-bell"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="profile.html" data-bs-toggle="tooltip" title="Profil"><i class='bx bxs-user-circle'></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html" data-bs-toggle="tooltip" title="Keluar"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+<!-- CAROUSEL -->
+    <div class="container-fluid" style="margin-top: 80px;">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/img_slide1.png" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="image/img_slide2.png" class="d-block w-100" alt="Slide 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+
+
+<!-- Tampilan Depan -->
+<div class="container d-flex justify-content-center align-items-center vh-50" style="margin-top: 80px; margin-bottom: 80px;">
+<div class="text-center" style="color: rgba(25, 64, 124, 1);">
+    <h1 style="font-size: 150%;">ASSALAMU’ALAIKUM WARAHMATULLAHI WABARAKATUH</h1>
+    <h1 style="font-size: 150%;">SELAMAT DATANG SOBAT di
+      < Praktikoem WEB /></h1>
+    <br>
+    <p>“Kecantikan yang abadi terletak pada keelokan adab dan ketinggian ilmu seseorang. Bukan terletak pada wajah dan pakaiannya.” </p>– Buya Hamka –</p>
+    
+    <div class="btn-hover2">
+      <button class="btn btn rounded-5 w-50s" type="button">Learn More</button>
+    </div>
+
+    <div style="margin-top: 25px; color:var(--text-color-2); cursor:pointer; display: flex; justify-content: center;">
+      <a class="nav-link" href="#" title="Email"><i class='bx bxs-envelope' style="font-size: 25px;"></i></a>
+      <a class="nav-link" href="https://www.instagram.com/aslabinf.umsida/" title="Instagram"><i class='bx bxl-instagram-alt' style="font-size: 25px;"></i></a>
+      <a class="nav-link" href="https://www.youtube.com/watch?v=Sy06sUxdAPY" title="Youtube"><i class='bx bxl-youtube' style="font-size: 25px;"></i></a>
+    </div>
+
+</div>
+</div>
+    
+
+<!-- MATERI PRAKTIKUM -->
+<hr style="margin-top: 80px; margin-bottom: 50px; border: 5px solid rgba(25, 64, 124, 1);">
+<h4 style=" margin-left: 5%; color: rgba(25, 64, 124, 1);">< MATERI PRAKTIKUM /></h4>
+
+
+<!-- SEMESTER 1 -->
+<div class="container" style="margin-top: 50px; color: rgba(25, 64, 124, 1);">
+  <div class="clearfix mb-3">
+    <h4 class="float-start"><b>SEMESTER 1</b></h4>
+    <div class="btn-hover2 float-end" style="display: inline-block;">
+      <a href="jp1.html"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+    </div>
+  </div>
+
+<!-- <div class="container" style="margin-top: 100px;">
+  <div class="clearfix mb-3">
+    <h4 class="float-start"><b>SEMESTER 1</b></h4>
+    <div class="btn-hover2 float-end" style="display: inline-block;">
+      <a href="https://drive.google.com/drive/folders/1mCuHlGrTnPEI1n8nM3xoITgwTBRuXUTQ?usp=drive_link"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+    </div>
+  </div> -->
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi1.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>ALGORITMA DAN PEMROGRAMAN</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="materi.html" class="btn">
+            <img src="image/materi2.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>SISTEM DIGITAL</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- SEMESTER 2 --> 
+<div class="container" style="margin-top: 100px;">
+<div class="clearfix mb-3">
+  <h4 class="float-start"><b>SEMESTER 2</b></h4>
+  <div class="btn-hover2 float-end" style="display: inline-block;">
+    <a href="jp2.html"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi1.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>ALGORITMA DAN STRUKTUR DATA</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi2.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>BASIS DATA</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- SEMESTER 3 -->  
+<div class="container" style="margin-top: 100px;">
+<div class="clearfix mb-3">
+  <h4 class="float-start"><b>SEMESTER 3</b></h4>
+  <div class="btn-hover2 float-end" style="display: inline-block;">
+    <a href="jp3.html"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi1.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>PEMROGRAMAN BERBASIS WEB</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi2.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>SISTEM OPERASI</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- SEMESTER 4 -->  
+<div class="container" style="margin-top: 100px;">
+<div class="clearfix mb-3">
+  <h4 class="float-start"><b>SEMESTER 4</b></h4>
+  <div class="btn-hover2 float-end" style="display: inline-block;">
+    <a href="jp4.html"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi1.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>JARINGAN KOMPUTER</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+ <!-- SEMESTER 5 -->   
+<div class="container" style="margin-top: 100px;">
+<div class="clearfix mb-3">
+  <h4 class="float-start"><b>SEMESTER 5</b></h4>
+  <div class="btn-hover2 float-end" style="display: inline-block;">
+    <a href="jp5.html"><button class="btn btn rounded-5 w-50s justify-content-end" type="button">Jadwal Praktikum</button></a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi1.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>PEMROGRAMAN BERBASIS OBJEK</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card my-3">
+      <div class="card-body">
+          
+          <a href="#" class="btn">
+            <img src="image/materi2.png" alt="materi1" style="width: 100%; height: auto; object-fit: contain; ">
+            <br><br>
+            <h6>REKAYASA PERANGKAT LUNAK</h6>
+          </a>
+          <div class="progress" role="progressbar" aria-label="progress-mk" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+          </div>
+      </div>
+  </div>
+
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+  <div class="mt-5" style="width: 100%;
+  bottom: 0;
+  background-color:  rgba(253, 240, 240, 1);
+  color: white;">
+      <div class="container-fluid">
+          <div class="p-5">
+              <div class="row text-center" style="color: rgba(25, 64, 124, 1);">
+                  <div class="col-md-4" >
+                      <h3>&lt; Praktikoem WEB /&gt;</h3>
+                      <a href="https://www.google.com/maps/place/Universitas+Muhammadiyah+Sidoarjo+kampus+2/@-7.4913675,112.7107357,21z/data=!4m6!3m5!1s0x2dd7e1812411a7df:0x6f4631d0d1213057!8m2!3d-7.4914625!4d112.7107412!16s%2Fg%2F11k4t_vldd?entry=ttu"><p>Laboratorium Center, Kampus 2 Universitas Muhammadiyah SidoarjoJl. Raya Gelam No.250, Pagerwaja, Gelam, Kec. Candi, Kabupaten Sidoarjo, Jawa Timur 61271</p></a>
+                  </div>
+                  <div class="col-md-4">
+                      <h4>Contact</h4>
+                      <p>Telp :  +62 851-7520-2106</p>
+                      <p>E-Mail : aslab@umsida.ac.id</p>
+                     
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Follow</h4>
+                    <div style="margin-top: 25px; color:var(--text-color-2); cursor:pointer; display: flex; justify-content: center;">
+                      <a class="nav-link" href="#" title="Email"><i class='bx bxs-envelope' style="font-size: 25px;"></i></a>
+                      <a class="nav-link" href="https://www.instagram.com/aslabinf.umsida/" title="Instagram"><i class='bx bxl-instagram-alt' style="font-size: 25px;"></i></a>
+                      <a class="nav-link" href="https://www.youtube.com/watch?v=Sy06sUxdAPY" title="Youtube"><i class='bx bxl-youtube' style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<footer>
+  <div class="container-fluid" style="width: 100%;
+  background-color:  rgba(25, 64, 124, 1);
+  color:  rgba(253, 240, 240, 1);
+  text-align: right;">
+        <p>© 2024 asa ASLAB. All Rights Reserved</p>
+  </div>
+</footer> 
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
